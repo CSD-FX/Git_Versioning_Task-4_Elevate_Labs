@@ -1,0 +1,60 @@
+/* assets/css/style.css */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #2e1a47, #4a2360, #2e1a47);
+  color: #f5e050;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: #f5e050;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+img.hero {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+h2, h3 {
+  color: #f5e050;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 0.3rem 0;
+}
+a {
+  color: #f5e050;
+}
