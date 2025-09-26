@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+
+# Ignore Python cache if any
+__pycache__/
+*.pyc
+
+
+# Environment files
+.env
+
