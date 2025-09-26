@@ -47,11 +47,36 @@ ___
 ```
 2.Serve site locally
 ```bash
-python3 -m http.server 8000
+   python3 -m http.server 8000
 ```
 3.Access in browser
 ```bash
-http://localhost:8000/index.html
+   http://localhost:8000/index.html
 ```
 ---
+
+*** If you want to edit the HTML pages, then run on another port after the editing of the files or kill the pid process of port 8000 and run again on port 8000
+
+1) Using different port:
+  ```bash
+     python3 -m http.server 9000
+  ```
+  ```bash
+     python3 -m http.server 9000
+  ```
+2) Kill the process using port 8000 and run again on port 8000:
+  * Find the PID (process ID) of the process using port 8000
+    ```bash
+       lsof -i :8000
+    ```
+  * kill that process
+    ```bash
+       kill -9 <your PID>
+    ```
+  * Now you can use port 8000 again to host your own edited HTML pages
+    ```bash
+       python3 -m http.server 9000
+    ```
+---
+
 🫡 HOPE YOU LIKED THE PROJECT AND LEARNT ABOUT GIT VERSIONING / TAGGING AND HOW TO CREATE SPECIFIC BRANCHES FOR PERTICULAR FEATURES WITH ALL THESE PRACTICES USED IN REAL WORLD PROJECTS / DEPLOYMENT ☺️✌🏼
